@@ -290,7 +290,8 @@ phina.define("MainScene", {
 			break;
 		//反転
 	  	case 4:
-  			this.sprite.setScale(this.direction*=-1.0, 1.0);
+  			this.direction*=-1.0;
+			this.sprite.scaleX *= -1.0;
 			this.v.x *= -1;
 			this.v.y *= -1;
 			label.text = '左右反転'
